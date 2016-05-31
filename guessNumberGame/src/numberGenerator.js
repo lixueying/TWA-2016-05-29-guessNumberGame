@@ -1,4 +1,4 @@
-function numberGenerator(){
+var numberGenerator = function(){
     var result = "";
     for (var i = 0; i < 4; i++){
         var num = parseInt(Math.random()*10);
@@ -8,4 +8,7 @@ function numberGenerator(){
         result += num.toString();
     }
     return result;
+}
+module.exports = {
+    numberGenerator: numberGenerator
 }

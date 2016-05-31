@@ -1,4 +1,4 @@
-function isValidateInput(guessNumber){
+var isValidateInput = function(guessNumber){
     if (guessNumber.length !== 4) {
         return false;
     }
@@ -12,4 +12,8 @@ function isValidateInput(guessNumber){
         }
     }
     return true;
+}
+
+module.exports = {
+    isValidateInput: isValidateInput
 }

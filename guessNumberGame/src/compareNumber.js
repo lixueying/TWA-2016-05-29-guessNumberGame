@@ -1,4 +1,4 @@
-function compare(guessNumber, randomNumber){
+var compare = function(guessNumber, randomNumber){
     var aCount = 0;
     var allContainedCount = 0;
     var result = "";
@@ -12,4 +12,9 @@ function compare(guessNumber, randomNumber){
     }
     result = result + aCount+"A"+(allContainedCount-aCount)+"B";
     return result;
+}
+
+
+module.exports = {
+    compare: compare
 }
