@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <link href="js/components/date-picker/jquery-ui-1.11.4.custom/jquery-ui.css" rel="stylesheet">
+    <style>
+        .redBorder {
+            border: red 1px solid;
+        }
+
+        .hideWrongMsg {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input type="text" id="cal" data-role="date-picker" class="input1"/>
+        <span class="hideWrongMsg" id="msg1">wrong format</span>
+        <input type="button" class="submit" value="validate"/>
+    </div>
+
+    <div>
+        <input type="text" id="cal1" class="input2"/>
+        <span class="hideWrongMsg", id="msg2">wrong format</span>
+        <input type="button" class="submit" value="validate" />
+    </div>
+
+    <script src="js/components/date-picker/jquery-ui-1.11.4.custom/external/jquery/jquery.js"></script>
+    <script src="js/components/date-picker/jquery-ui-1.11.4.custom/jquery-ui.js"></script>
+
+    <script src="js/components/date-picker/view/warning.js"></script>
+
+    <script src="js/components/date-picker/index.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <script src="js/components/date-picker/controller/validate.js"></script>
+</body>
+
+</html>
