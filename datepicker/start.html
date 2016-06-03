@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>start</title>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <link href="js/components/date-picker/jquery-ui-1.11.4.custom/jquery-ui.css" rel="stylesheet">
+    <script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+        $("#dialog").dialog({
+            autoOpen: false,
+            show: {
+                effect: "blind",
+                duration: 1000
+            },
+            hide: {
+                effect: "explode",
+                duration: 1000
+            }
+        });
+
+        $(function(){
+            $("#add").click(function() {
+                $("#dialog").dialog("open");
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div>
+        <button type="button" id="add">+</button>
+    </div>
+
+    <div id="dialog">
+        <ol>
+            <li><input type="text" id="cal" data-role="date-picker"/></li>
+            <li><input type="text" id="cal1" /></li>
+        </ol>
+    </div>
+
+
+
+
+    <script src="js/components/date-picker/jquery-ui-1.11.4.custom/external/jquery/jquery.js"></script>
+    <script src="js/components/date-picker/jquery-ui-1.11.4.custom/jquery-ui.js"></script>
+
+    <script src="js/components/date-picker/view/warning.js"></script>
+
+    <script src="js/components/date-picker/index.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
